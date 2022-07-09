@@ -1,0 +1,171 @@
+* {
+  font-family: 'Cairo', sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+@font-face {
+  font-family: 'myfont';
+  src: url('../font/font/GE_SS_Text_Medium.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.logo{
+  width: 250px;
+  margin-bottom: 15px;
+}
+.Wave {
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: auto;
+  height: 85%;
+}
+
+.in {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  bottom: 0px;
+}
+
+
+.top {
+  z-index: 15;
+  opacity: 0.5;
+}
+
+.midd {
+  z-index: 10;
+  opacity: 0.75;
+}
+
+.last {
+  z-index: 5;
+}
+
+.wave {
+  position: absolute;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background-repeat: repeat no-repeat;
+  background-position: 0 bottom;
+  -webkit-transform-origin: center bottom;
+          transform-origin: center bottom;
+}
+
+.waveTop {
+  background-size: 50% 100px;
+}
+
+.waveAnimation .waveTop {
+  animation: move-wave 3s;
+  -webkit-animation: move-wave 3s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.waveMiddle {
+  background-size: 50% 120px;
+}
+
+
+
+.waveBottom {
+  background-size: 50% 100px;
+}
+
+.waveAnimation .waveBottom {
+  -webkit-animation: move_wave 15s linear infinite;
+          animation: move_wave 15s linear infinite;
+}
+
+.log {
+  position: relative;
+  z-index: 99999;
+  text-align: center;
+  padding: 150px 0 200px;
+  color: #fff;
+}
+
+
+.log .title{
+  font-weight: bold;
+  font-size: 50px;
+  color: #fff;
+}
+
+.log .content {
+  background-color: #fff;
+  border-radius: 10px;
+  margin-top: 65px;
+  -webkit-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.log .content P {
+  color: #000;
+  font-weight: bold;
+  margin: -10px 0 25px 0;
+  padding-top: 40px;
+  font-size: 22px;
+}
+
+.log .content label {
+  color: #000;
+}
+
+.log .content .check {
+  width: 15px;
+  margin: 0 0 0 5px;
+}
+
+.log .content a{
+  color: #000;
+  text-decoration: none;
+}
+.btn{
+  background-color: #cf6b22;
+  border-color: #cf6b22;
+}
+.btn:hover{
+  background-color: #cf6b22 !important;
+  border-color: #cf6b22 !important; 
+}
+@media (min-width : 320px) {
+  .log2 .content{
+    width: auto;
+    margin: auto;
+    padding: 60px 36px;
+    margin-top: 30px;
+  }
+  #idCanvas{
+    width: 100%;
+  }
+}
+@media (min-width : 480px) {}
+@media (min-width : 768px) {}
+@media (min-width : 992px) {
+  .log2 .content{
+    width: 575px;
+    margin: auto;
+    padding: 60px 36px;
+    margin-top: 30px;
+  }
+  #idCanvas{
+    width: 50%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
